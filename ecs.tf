@@ -5,7 +5,7 @@ resource "aws_ecs_cluster" "main" {
 }
 
 data "template_file" "myapp_app" {
-  template = file("./terraform/templates/ecs/myapp_app.json.tpl")
+  template = file("./templates/ecs/myapp_app.json.tpl")
 
   vars = {
     app_image      = var.app_image
