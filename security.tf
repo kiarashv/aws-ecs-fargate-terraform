@@ -1,6 +1,6 @@
 # security.tf
 
-# ALB Security Group: Edit to restrict access to the application
+# ALB Security Group: Feel free to edit to restrict access to the application
 resource "aws_security_group" "lb" {
   name        = "myapp-load-balancer-security-group"
   description = "controls access to the ALB"
