@@ -5,6 +5,11 @@ variable "aws_region" {
   default     = "ap-southeast-2"
 }
 
+variable "aws_profile" {
+  description = "AWS profile to use when provisioning the app. This is set in the ~/.aws directory"
+  default = "default"
+}
+
 variable "ecs_task_execution_role_name" {
   description = "ECS task execution role name"
   default = "myEcsTaskExecutionRole"
