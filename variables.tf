@@ -7,6 +7,7 @@ variable "aws_region" {
 
 variable "aws_profile" {
   description = "AWS IAM user profile"
+  default = "contino-sandbox"
   # default = "{Add your aws profile name e.g default and uncomment this line}" 
 }
 
