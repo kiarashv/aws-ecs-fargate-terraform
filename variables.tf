@@ -2,11 +2,11 @@
 
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "us-west-1"
+  default     = "ap-southeast-2"
 }
 
 variable "aws_profile" {
-  description = "AWS profile to use when provisioning the app. This is set in the ~/.aws directory"
+  description = "AWS profile to use when provisioning the app. This is set in the ~/.aws/credentials"
   default = "default"
 }
 

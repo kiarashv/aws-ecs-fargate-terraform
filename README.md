@@ -1,5 +1,5 @@
 # aws-ecs-fargate-terraform
-Automate Fargate ECS Infrastructure Setup Using Terraform and Deploy a PHP Docker Image
+Automate Fargate ECS Infrastructure Setup Using Terraform and Deploy an Apache-php5 Docker Image
 
 Variables to edit in variables.tf file
 - aws_region (default to ap-southeast-2)
