@@ -2,12 +2,17 @@
 
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "ap-southeast-2"
+  default     = "us-west-1"
 }
 
 variable "aws_profile" {
   description = "AWS profile to use when provisioning the app. This is set in the ~/.aws directory"
   default = "default"
+}
+
+variable "aws_vpc_cidr_block" {
+  description = "AWS VPC CIDR IP range"
+  default = "10.0.0.0/16"
 }
 
 variable "ecs_task_execution_role_name" {
