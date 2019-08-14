@@ -5,7 +5,7 @@ data "aws_availability_zones" "available" {
 }
 
 resource "aws_vpc" "main" {
-  cidr_block = var.vpc_cidr_block
+  cidr_block = var.aws_vpc_cidr_block
 }
 
 # Create var.az_count private subnets, each in a different AZ
