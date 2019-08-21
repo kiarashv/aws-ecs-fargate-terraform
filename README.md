@@ -6,6 +6,7 @@ Variables to edit in variables.tf file
 - aws_profile (default to default)
 - aws_vpc_cidr_block (default to 10.0.0.0/16)
 - az_count (number of availability zones - default to 2)
+- alb_port (the Application Load Balancer Port to be called from the Internet - default to 80)
 - app_image (the docker app image default to nimmis/apache-php5)
 - app_port (the port that should be exposed by Docker image - default to 80)
 - app_count (number of docker containers to run - default to 2)

@@ -7,7 +7,7 @@ variable "aws_region" {
 
 variable "aws_profile" {
   description = "AWS profile to use when provisioning the app. This is set in the ~/.aws/credentials"
-  default = "default"
+  default = "contino-sandbox"
 }
 
 variable "aws_vpc_cidr_block" {
@@ -28,6 +28,11 @@ variable "ecs_auto_scale_role_name" {
 variable "az_count" {
   description = "Number of AZs to cover in a given region"
   default     = "2"
+}
+
+variable "alb_port" {
+  description = "Application Load Balancer Port to be called from the Internet"
+  default     = 80
 }
 
 variable "app_image" {
